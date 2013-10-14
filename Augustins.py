@@ -40,8 +40,8 @@ def main(args):
         mapping_fields = ['ARTSIT', 'DATE', 'MEDIUM']
         collection.retrieve_metadata_alignments(mapping_fields,
                                                 alignment_template)
-
-        #reader = collection.post_process_collection(mapping)
+        mapping_methods = {};
+        reader = collection.post_process_collection(mapping_methods)
         template_name = 'Commons:Musée des Augustins/Ingestion'.encode('utf-8')
         front_titlefmt = ""
         variable_titlefmt = "%(ARTIST)s - %(TITLE)s"
